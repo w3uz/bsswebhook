@@ -1,3 +1,5 @@
+auto = true
+
 local StatCache = require(game.ReplicatedStorage.ClientStatCache)
 local dailyhoney = StatCache:GetDailyTotal("Honey")
 local username = game:GetService("Players").LocalPlayer.Name
@@ -9,6 +11,7 @@ local OSTime = os.time();
 local Time = os.date('!*t', OSTime);
 local icon = "https://www.roblox.com/headshot-thumbnail/image?userId="..userid.."&width=420&height=420&format=png";
 
+while auto true do
 msg = {
     ["embeds"] = {{
         ["color"] = 13708129,
@@ -22,7 +25,6 @@ msg = {
         }   
     }   
 }
-while true do
     local response = syn.request(
         {
         Url = _G.webhook,
