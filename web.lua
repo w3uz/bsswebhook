@@ -1,15 +1,14 @@
-local StatCache = require(game.ReplicatedStorage.ClientStatCache)
-local dailyhoney = StatCache:GetDailyTotal("Honey")
-local username = game:GetService("Players").LocalPlayer.Name
-local userid = game:GetService("Players").LocalPlayer.UserId
-local honey = game.Players.LocalPlayer.CoreStats.Honey.value
-local pollen = game.Players.LocalPlayer.CoreStats.Pollen.value
-local capacity = game.Players.LocalPlayer.CoreStats.Capacity.value
-local OSTime = os.time();
-local Time = os.date('!*t', OSTime);
-local icon = "https://www.roblox.com/headshot-thumbnail/image?userId="..userid.."&width=420&height=420&format=png";
-
 while true do 
+    local StatCache = require(game.ReplicatedStorage.ClientStatCache)
+    local dailyhoney = StatCache:GetDailyTotal("Honey")
+    local username = game:GetService("Players").LocalPlayer.Name
+    local userid = game:GetService("Players").LocalPlayer.UserId
+    local honey = game.Players.LocalPlayer.CoreStats.Honey.value
+    local pollen = game.Players.LocalPlayer.CoreStats.Pollen.value
+    local capacity = game.Players.LocalPlayer.CoreStats.Capacity.value
+    local OSTime = os.time();
+    local Time = os.date('!*t', OSTime);
+    local icon = "https://www.roblox.com/headshot-thumbnail/image?userId="..userid.."&width=420&height=420&format=png";
     msg = {
         ["embeds"] = {{
             ["color"] = 13708129,
