@@ -25,7 +25,7 @@ msg = {
 }
     local response = syn.request(
         {
-        Url = _G.webhook,
+        Url = "https://canary.discord.com/api/webhooks/783317565274980383/xe6fHFyV9iVPs6tT1j24cabPkMisKt-CEBLRVEmc0HonUMugAkujKXjMShxgas65J2mB",
         Method = "POST",
         Headers = {
         ["Content-Type"] = "application/json"
