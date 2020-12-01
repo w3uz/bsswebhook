@@ -11,7 +11,7 @@ local OSTime = os.time();
 local Time = os.date('!*t', OSTime);
 local icon = "https://www.roblox.com/headshot-thumbnail/image?userId="..userid.."&width=420&height=420&format=png";
 
-while auto true do
+while auto == true do
 msg = {
     ["embeds"] = {{
         ["color"] = 13708129,
